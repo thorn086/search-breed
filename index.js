@@ -31,8 +31,13 @@ function error(dogImageJson){
 function loadImages(breed) {
     fetch("https://dog.ceo/api/breed/"+`${breed}`+"/images")
         .then(dogImage => dogImage.json())
-        .then(dogImageJson => displayImages(dogImageJson))
-        .catch(dogImageJson => error(dogImageJson));
+        .then(dogImageJson => {
+            if (dogImageJson.status == "error") {
+              error(dogImageJson);
+            } else {
+              displayImages(dogImageJson);
+            }
+          })
 }
 
 
