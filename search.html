@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog App</title>
+    <link href="search.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Dog Breeds</h1>
+    </header>
+    <main class="dog-form">
+        <h2>Looking for a type of Breed?</h2>
+        <form>
+            <fieldset>
+                <legend>Breed Selector</legend>
+                <div class="inputBreed">
+                <label for="search-site">Choose your Breed:</label>
+                <input type="search" id="search" name="dog-breed"  placeholder="Hound">
+                <button>Search</button>
+                </div>
+            </fieldset>
+        </form>
+        <section class="three">
+            <h3>Your Searched Dog!</h3>
+            <div class="results-img"></div>
+        </section>
+
+
+    </main>
+    <script src="search.js"></script>
+</body>
+
+</html>
