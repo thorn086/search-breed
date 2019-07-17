@@ -24,7 +24,7 @@ h2,fieldset{
 
 
 fieldset{
-    width: 90%;
+    width: 99%;
     height: 100px;
     margin:auto;
     font-weight: bolder;
@@ -32,7 +32,7 @@ fieldset{
 
 }
 
-.inputNumbers{
+.inputBreed{
     padding-top: 40px;
 }
 
@@ -52,6 +52,45 @@ h3{
     margin: 20px 0;
 }
 
+#error{
+    width: 90%;
+    height: 100px;
+    margin:auto;
+    background: tan;
+    font-size: 20px;
+
+}
+
+#error p{
+    font-size: 26px;
+    color:red;
+    margin: 5px;
+  
+}
+
+
+#search{
+    width: 120px;
+    height: 20px;
+   
+}
+
+.inputBreed{
+    padding: 25px 1px 0 1px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+}
+button {
+    width: 50px;
+    height: 20px;
+}
+
+
+
 @media Screen and (min-width:430px){
     
 h2,fieldset{
@@ -67,19 +106,19 @@ h2{
 }
 
 fieldset{
-    width: 80%;
+    width: 95%;
     height: 150px;
     margin:auto;
 }
 
-.inputNumbers{
+.inputBreed{
     padding-top: 60px;
     font-size: 22px;
 
 }
 
 img{
-    width: 400px;
+    width: 300px;
     height: 240px;
     margin: 3px;
     border: 2px solid white;
@@ -89,9 +128,47 @@ h3{
     margin: 30px 0;
 }
 
+
+#error{
+    width: 80%;
+    height: 100px;
+    margin:auto;
+    background: tan;
+    font-size: 20px;
+
 }
 
-@media screen and (min-width: 998px){
+#error p{
+    font-size: 36px;
+    color:red;
+    margin: 5px;
+  
+}
+
+
+#search{
+    width: 220px;
+    height: 30px;
+   
+}
+
+.inputBreed{
+    padding: 45px 1px 0 1px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+button {
+    width: 70px;
+    height: 30px;
+}
+
+}
+
+@media screen and (min-width: 820px){
 
        
 h2,fieldset{
@@ -112,17 +189,32 @@ h3{
 }
 
 fieldset{
-    width: 70%;
+    width: 85%;
     height: 100px;
     margin:auto;
 }
 legend{
     font-size: 18px;
 }
-.inputNumbers{
-    padding-top: 20px;
-    font-size: 26px;
 
+#search{
+    width: 480px;
+    height: 30px;
+    padding: 0px 10px;
+}
+
+.inputBreed{
+    padding: 20px;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+button {
+    width: 80px;
+    height: 30px;
 }
 
 img{
