@@ -6,6 +6,7 @@ function submitForm() {
         event.preventDefault();
         let searchChoice = document.getElementById("search").value;
         let breed = searchChoice.toLowerCase();
+        $('.three').removeClass('hidden');
         loadImages(breed);
         resetForm();
     });
@@ -15,10 +16,8 @@ function submitForm() {
 function displayImages(dogImageJson){
     $('.results-img').empty();
     console.log(dogImageJson);
-    let x ="";
-    for (let i = 0; i < dogImageJson.message.length; i++) {
-        x += `<img src="${dogImageJson.message[i]}" alt=" Dog Breed Image">`;
-    };
+    let x = `<img src="${dogImageJson.message[0]}" alt=" Dog Breed Image">`;
+    
     $('.results-img').append(x);
 }
 
